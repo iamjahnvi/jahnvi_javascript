@@ -1,5 +1,5 @@
 // COMPARASIONS OF TWO DIFFERENT DATATYPES
-of 
+
 // console.log("2" > 1)           // true - conversion of string to number.
 // console.log("02" > 1)          // true
 
