@@ -34,3 +34,26 @@ const myFunction = function(){
 console.log(typeof bigNumber)              // bigint
 console.log(typeof pets)                   // object
 console.log(typeof myFunction)             // funcion object
+
+// ***********STACK****************
+// Stack(primitive)  , Heap(non-primitive)
+// whenever we change something in stack memory, change is reflected in copy of data 
+// whenever we change something in heap memory, change is reflected in original data,
+// and that we can access by referencing.
+
+let myYoutube = "hiteshchodharydotcom"
+let anothername = myYoutube
+anothername = "chaiaurcode"
+console.log(anothername);
+console.log(myYoutube)
+
+let userOne = {
+    email : "user@gmail.com" ,
+    upi : "user@xyz"
+}
+
+let userTwo = userOne
+userTwo.email = "abc@gmail.com"
+
+console.log(userTwo);
+console.log(userOne);
