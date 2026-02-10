@@ -1,0 +1,48 @@
+const name = "hitesh"
+const repoCount = 50
+
+// old way
+// console.log("Hello my name is " + name + " and my repoCount is " + repoCount);               
+
+// STRING INTAPULATION - new way
+console.log(`Hello my name is ${name} and my repoCount is ${repoCount}`);              
+
+const gameName = new String('hitesh-hc-com')
+
+console.log(`Letter at 0th index - ${gameName[0]}`);
+console.log(`Letter at 1st index - ${gameName[1]}`);
+console.log(`Letter at 2nd index - ${gameName[2]}`);
+console.log(`Letter at 3rd index - ${gameName[3]}`);
+
+console.log(gameName.__proto__);                        // {}
+console.log(gameName.length);
+console.log(gameName.toUpperCase());
+console.log(gameName.toLowerCase());
+console.log(gameName.charAt(2));
+console.log(gameName.indexOf('o'));
+console.log(gameName.lastIndexOf('o'));
+console.log(gameName.endsWith('t'));
+
+const String1 = gameName.substring(0,3);
+console.log(String1);    
+
+// in substring even if we pass negative value, it it going to take it as 0 only.
+
+const String2 = gameName.slice(-8,4);
+console.log(String2);
+
+const String3 = "    hitesh   ";
+console.log(String3);
+console.log(String3.trim());
+
+const url = "https://hitesh.com/hitesh%20choudhary";
+console.log(url.replace('%20' , '-'));
+console.log(url.includes('hitesh'));
+
+console.log(gameName.split('-')); 
+// here we are splitting on the basis of "-"
+
+
+
+
+
