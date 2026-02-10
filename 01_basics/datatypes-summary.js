@@ -4,7 +4,7 @@
 const score = 100;                // number
 const scoreValue = 100.3;        // number
 const isLoggedIn = false;       // boolean
-const outsideTemp = null;      // null means empty, it's type is object
+const outsideTemp = null;      // null means empty, it's type is object.
 let userEmail;                // undefined
 
 const id = Symbol('123')        
