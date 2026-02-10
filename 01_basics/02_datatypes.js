@@ -14,11 +14,11 @@ let isLoggedIn = true
 
 // PRIMITIVE DATATYPES
 
-// number => 2 to power 53
-// bigInt 
+// number => range upto (2 raise to the power of 53)
+// bigInt
 // string => "" (enclosed in double quotes)
 // boolean => true/false
-// null => stand alone value (empty value)
+// null  => stand alone value (empty value)
 // undefined => value not defined/assigned
 // symbol => unique elements
 
