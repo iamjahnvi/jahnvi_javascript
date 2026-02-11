@@ -44,14 +44,18 @@ const myn1 = myArr.slice(1 , 3)
 // slice displays array elements with indexes from inputed range, excluding upper limit
 console.log(myn1);
 
-const myn2 = myArr.splice(1 , 3)
-console.log(myn2);
-console.log(myArr);
+// const myn2 = myArr.splice(1 , 3)
+// console.log(myn2);
+// console.log(myArr);
 
 // #interview question - role of splice
 // splice displays elements with indexes from inputed range , including the upper limit 
 // also , it changes the main array , now the main array only consists of elements which were not included at time of splice.
 
+console.log(myArr.at(-2));
+// returns the element at particular index.
+// if inputed index is out of length of array , then it returns index as undefined.
+// for negative index output = value at (array.length + negative index)
 
 
 
