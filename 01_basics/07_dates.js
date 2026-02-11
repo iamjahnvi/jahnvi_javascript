@@ -62,6 +62,33 @@ console.log(exampleDate.toLocaleDateString());
 // 12/11/2022
 // when we give month as -ve in input then it displays month as (12 - n + 1) , n = number(without sign)
 
+// we can also date in the format of YYYY-MM-DD
+let myCreatedDate = new Date("2026-02-11")
+console.log(myCreatedDate.toLocaleString());
+
+// in india , we prefer to write dates as MM-DD-YYYY
+let myDate = new Date("01-14-2026")
+console.log(myDate.toLocaleString());
+
+let myTimeStamp = Date.now();
+console.log(myTimeStamp);
+// Date.now is the method which returns the number of milliseconds that have passed since january 1st , 1970 (UTC)
+// this starting point is called Unix Epoch.
+
+console.log(myDate.getTime());
+// it converts the time from 1st jan 1970 to current date in milliseconds.
+
+console.log(Math.floor(Date.now()/1000));
+// what we did in the above stated code is , that we found the no.of milliseconds elapsed since midnight of 1st jan 1970 to till date , and then we converted it into seconds by dividing it to 1000 , and then because it gives answer in decimal format, we used Math.floor()
+
+
+console.log(myDate.toLocaleString('default' , {
+        weekday : "long"
+})
+);
+// myDate is the instance of Date object , which has a method "toLocaleString" . we wrote default as the international standard , and then weekday as long , due to which weekday got displayed in full length.
+
+
 
 
 
