@@ -1,4 +1,4 @@
-// array 
+// Array 
 
 // FIRST WAY OF DEFINING ARRAY :-
 const myArr = [0 , 1 , 2 , 3 , 4 , 5]
