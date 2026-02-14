@@ -20,12 +20,12 @@ const regularUser = {
     email : "ilysm@gmail.com" , 
     fullName : {
         userFullName :  {          // object inside object 
-            fisrtName : "jahnvi" , 
+            firstName : "jahnvi" , 
             lastName : "dwivedi"
         }
     }
 }
-console.log(regularUser.fullName.userFullName.fisrtName);
+console.log(regularUser.fullName.userFullName.firstName);
 
 
 // BIG FAT EXAMPLE OF OBJECT INSIDE OBJECT
@@ -123,7 +123,7 @@ const obj2 = {3 : "c" , 4 : "d"}
 // const obj3 = Object.assign( {} , obj1 , obj2)
 // generally this way of writing is more prefered as "{}" as target and obj1 , obj2 as source.(read assign doc mdn)
 
-// 3rd WAY :-
+// 3rd WAY (most used) :-
 // const obj3 = {...obj1 , ...obj2}
 // console.log(obj3);
 
@@ -151,6 +151,7 @@ const users = [
 ]
 
 // remember : the bracket enclosing the last object key-value pair is a sqaure bracket.
+
 users[1].email
 console.log(tinderUser);
 
@@ -162,6 +163,15 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+const course = {
+    courseName : "js in hindi" ,
+    price : 999 ,
+    courseInstructor : "Hitesh"
+}
+// course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor);
 
 
 
