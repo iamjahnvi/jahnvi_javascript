@@ -25,7 +25,7 @@ const regularUser = {
         }
     }
 }
-console.log(regularUser.fullName.userFullName.firstName);
+// console.log(regularUser.fullName.userFullName.firstName);
 
 
 // BIG FAT EXAMPLE OF OBJECT INSIDE OBJECT
@@ -108,9 +108,9 @@ const student = {
 }
 
 // way of accessing object inside object :-
-console.log(`NAME : ${student.delina.fullName.firstName}`);
-console.log(`AGE : ${student.delina.age}`);
-console.log(`GENDER : ${student.delina.gender}`);
+// console.log(`NAME : ${student.delina.fullName.firstName}`);
+// console.log(`AGE : ${student.delina.age}`);
+// console.log(`GENDER : ${student.delina.gender}`);
 
 const obj1 = {1 : "a" , 2 : "b"}
 const obj2 = {3 : "c" , 4 : "d"}
@@ -155,14 +155,15 @@ const users = [
 users[1].email
 console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 // stored in an array
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
+// -----------------------Object- de structure ------------------
 const course = {
     courseName : "js in hindi" ,
     price : 999 ,
@@ -170,11 +171,27 @@ const course = {
 }
 // course.courseInstructor
 
-const {courseInstructor} = course
-console.log(courseInstructor);
+const{courseName : cN} = course
+console.log(cN);
+// way of writing above print statement is that we write const with curly brackets in front of it and then write the RHS , to find from where are we actually extracting info , and then we write the key and we may shorten it acc.to our own needs.
 
+const{price : p} = course
+console.log(p);
 
+const{courseInstructor : instructor} = course
+console.log(instructor);
 
+// in the above stated examples we are doing object de-structuring as we firstly made an object named as course and then we find ways to de-structure it.
+
+// APIs in the format of objects 
+
+// {
+//     "name" : "jahnvi" , 
+//     "courseName" : "js in hindi" ,
+//     "price" : "free"
+// }
+
+// watch json tutorial of codewithHarry (couldn't understand from chai and code)
 
 
 
