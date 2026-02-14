@@ -81,12 +81,11 @@ console.log(myDate.getTime());
 console.log(Math.floor(Date.now()/1000));
 // what we did in the above stated code is , that we found the no.of milliseconds elapsed since midnight of 1st jan 1970 to till date , and then we converted it into seconds by dividing it to 1000 , and then because it gives answer in decimal format, we used Math.floor()
 
-
 console.log(myDate.toLocaleString('default' , {
         weekday : "long"
 })
 );
-// myDate is the instance of Date object , which has a method "toLocaleString" . we wrote default as the international standard , and then weekday as long , due to which weekday got displayed in full length.
+// myDate is the instance of Date object , which has a method "toLocaleString" . we write default as the international standard , and then weekday as long , due to which weekday got displayed in full length.
 
 
 

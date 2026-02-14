@@ -1,6 +1,7 @@
 // let score = "33abc";
 
-// console.log(typeof score);           // string(because in double quotes)
+// console.log(typeof score);      
+//                                      // string(because in double quotes)
 // console.log(typeof (score));         // string
 
 // let valueInNumber = Number(score);

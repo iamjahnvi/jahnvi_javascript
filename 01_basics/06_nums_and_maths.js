@@ -1,4 +1,4 @@
-// There are two ways of creating score as Numbers.
+// There are two ways of creating Score as Numbers.
 
 // Primitive way :
 // const score = 4000
@@ -25,6 +25,7 @@
 // Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified pos
 
 // console.log(balance.toString().endsWith("1"));
+// we put value inside method using by converting it into string.
 // returns boolean value - true/false 
 
 // console.log(balance.toString().includes("2"));
@@ -62,8 +63,8 @@
 // console.log(Number.EPSILON);
 // Number.EPSILON is the smallest difference JavaScript can reliably notice between two numbers.
 
-// console.log(Number.isFinite("100"));
-// returns true only in case of actual numbers
+console.log(Number.isFinite("100"));
+// returns true only in case of actual numbers .
 // it doesn't convert strings
 
 // console.log(Number.isInteger(10.3));
@@ -91,7 +92,7 @@ console.log(Math);
 // highly useful library in js.
 
 console.log(Math.abs(-4));
-// converts negative values to positive values.
+// converts negative values to positive values , but vice-versa is not possible.
 
 console.log(Math.round(4.3));
 // round off 4.3 to 4.
@@ -116,7 +117,7 @@ console.log(Math.random());
 // will display any random value between 0 and 1 , only.
 
 console.log((Math.random()*10)+ 1);
-// sometimes Math.random() also throws values 0.03 , when we multiply it by 10 , it still continues to remain 0 , in order to avoid output as 0 , we add 1 in it.
+// sometimes Math.random() also throws values 0.03 , when we multiply it by 10 , it still continues to remain 0 , in order to avoid output as 0 , we add 1 in it , so that we can get minimum ans as 0.
 
 console.log(Math.floor(Math.random()*10) + 1);
 // Math.floor rounds off the value inside brackets to nearest smallest value.

@@ -24,7 +24,8 @@ let studentId = {
     name : "delina" , 
     age : 19 ,
     gender : "female",
-    course : "btech" 
+    course : "btech" ,
+    phoneNo : 9899698663n
 } 
 
 const myFunction = function(){
