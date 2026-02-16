@@ -16,14 +16,14 @@ console.log(myArr2)
 myArr.push(6)
 // add new elements
 
-myArr.pop();
+myArr.pop()
 // removes last element of array
 
-myArr.unshift(0);
+myArr.unshift(0)
 // unshift adds the inputed element at the beginning of array. 
 // it is generally not preferred at industrial level, becuase rn we had to shift just 7 elements , but at large scale we'd to shift elements in thousands, which will be super time consuming.
 
-myArr.shift();
+myArr.shift()
 // remove the unshifted element.
 
 console.log(myArr.includes(9));
@@ -32,9 +32,14 @@ console.log(myArr.includes(9));
 console.log(myArr.indexOf(9));
 // returns index of element, if inputed value is not present then returns -1.
 
-const newArr = myArr.join()
-console.log(newArr);
-console.log(typeof newArr);
+const newArr = myArr.join()      
+// join method converts array into string.
+
+console.log(newArr);          
+// 0 , 1 , 2 , 3 , 4 , 5
+
+console.log(typeof newArr);    
+// string
 
 console.log("A " , myArr);
 // A [0 , 1 , 2 , 3 , 4 , 5]
