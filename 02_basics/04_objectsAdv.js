@@ -141,16 +141,16 @@ const users = [
         email : "efg@gmail.com"
     } ,
     {
-        id : 1 , 
+        id : 4 , 
         email : "ijk@gmail.com"
     } ,
     {
-        id : 1 , 
+        id : 5 , 
         email : "opq@gmail.com"
     }
 ]
 
-// remember : the bracket enclosing the last object key-value pair is a sqaure bracket.
+// remember : the bracket enclosing all the objects contanining key-value pair is a sqaure bracket , because it is none other than array.
 
 users[1].email
 console.log(tinderUser);
@@ -192,33 +192,6 @@ console.log(instructor);
 // }
 
 // watch json tutorial of codewithHarry (couldn't understand from chai and code)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // #interview :-
 // QUESTION - if output of the two console statements is same , then what is difference?
