@@ -48,7 +48,7 @@ alpha.forEach((num) => {
 
 
 const books = [
-   {title : 'Book-1' , genre : 'fiction' , publish : '1981' , edition : '2002'} ,
+    {title : 'Book-1' , genre : 'fiction' , publish : '1981' , edition : '2002'} ,
     {title : 'Book-2' , genre : 'non-fiction' , publish : '1986' , edition : '2007'} ,
     {title : 'Book-3' , genre : 'science' , publish : '1988' , edition : '2009'} ,
     {title : 'Book-4' , genre : 'history' , publish : '1989' , edition : '2006'} ,
@@ -76,7 +76,7 @@ console.log(userBooks);
 
 
 // output in the form of array 
-// [  s
+// [  
 //   {
 //     title: 'Book-4',
 //     genre: 'history',
