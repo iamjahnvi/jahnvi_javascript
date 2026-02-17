@@ -30,7 +30,7 @@ for(const greet of greetings){
 const map = new Map()
 map.set('IN' ,  "India")
 map.set('USA' , "United staes of america")
-map.set('UK',   "United America")
+map.set('UK',   "United Kingdom")
 map.set('Fr' ,  "France")
 map.set('Fr' ,  "France")
 
