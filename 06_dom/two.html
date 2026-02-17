@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur Code</title>
+</head>
+<body style="background-color : #212121 ; color : #fff">
+    <div class = "parent">
+        <div class = "day">Monday</div>
+        <div class = "day">Tuesday</div>
+        <div class = "day">Wednesday</div>
+        <div class = "day">Thursay</div>
+        <div class = "day">Friday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+
+    console.log(parent);
+    // we got all the elements with parent class.
+
+    console.log(parent.children)
+    // we got a HTML collection of divs inside parent class and we can iterate on it thru for loop.
+
+    console.log(parent.children[0])
+    // we can access parent class as an array inside which elements cam be accesses thru indexing.
+
+    // for(let i = 0 ; i < parent.children.length ; i++){
+    //     console.log(parent.children[i].innerContent)
+    // }
+    // it is showing - "undefined"
+
+    for(let j = 0 ; j < parent.children.length ; j++){
+        console.log(parent.children[j].innerHTML)
+    }
+    // this or innerText will display some content.
+
+    for(let k = 0 ; k < parent.children.length ; k++){
+        if(k%2==0){
+            parent.children[k].style.color = "blue"
+        } else {
+            parent.children[k].style.color = "orange"
+        }
+    }
+
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    // console.log(parent.secondElementChild)     // undefined
+
+    const dayOne = document.querySelector('.day')
+    // from all the elements having class 'day' , querySelector will print the first day only.
+    // console.log(dayOne)
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling)
+    
+    console.log("NODES : " , parent.childNodes)
+
+
+
+
+</script>
+</html>
