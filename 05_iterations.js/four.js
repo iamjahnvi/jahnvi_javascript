@@ -17,7 +17,7 @@ for(const key in myObject){
 console.log("Names i belong to :-")
 const array1 = ["pixie" , "champ" , "cutie" , "hustler"]
 for(const names in array1){
-    console.log(array1[names])
+    console.log(`${array1[names]}`)
 }
 
 // for-of loop implemented on array :-
