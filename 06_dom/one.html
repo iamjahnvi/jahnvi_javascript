@@ -27,7 +27,134 @@
 </body>
 </html>
 
-<!-- DOM stands for document object model -->
+<!-- DOM stands for Document Object Model -->
+
+<!-- The stuff i will write after this was taught in lec-32 of js of chai or code and we will be earning here about All DOM Selectors NodeList and HTML Collection   , and whatever i am writing will be in reference of the abve coded Html.
+
+step-1 : open console 
+then ,
+>document.getElementById('title')
+// inside this we write the ID of the element we want.
+
+>document.getElementById('title').id
+// to access the id
+
+>document.getElementById('title').class 
+// it will print "undefined"
+
+>document.getElementById('title').className
+// it will print the class name , given to the element with id as 'title'.
+// in html we write class , as class only but behind the scenes in the document object model , the value of class is stored inside className.
+
+>document.getElementById('title').getAttribute('id')
+// will return id
+
+>document.getElementById('title').getAttribute('class')
+// in case of "getAttribute" , we write 'class' only , to get the class of id - "title".
+
+>document.getElementById('title').setAttribute('class' , 'new heading')
+// will set className as "new heading" , tho in console it will show undefined.
+
+// it is generally preferred to store the statement like "document.getElementById('title').getAttribute('id')"  , inside some variable
+const title = document.getElementById('title')
+
+>title.style.backgroundColor = 'yellow'
+>title.style.border = 'black'
+>title.style.padding = "10px"
+// hence we can implement all the features of style in it.
+
+// ways to get content out of HTML code
+
+>title.innerText 
+// 'DOM learning on Chai or Code'
+
+>title.textContent
+// 'DOM learning on Chai or Code test text'
+// textContent will display all the hidden content also.
+
+>title.inner HTML
+// we will also get inner HTML written inside id = 'title', which is 'DOM learning on Chai or Code <span style = "display : none" test text </span>'
+
+>document.getElementsByClassName('heading')
+
+>document.querySelector('h1')
+// will show the first 'h1' tag written here.
+
+>document.querySelectorAll('h1')
+// will show all the "h1" headings.
+
+>document.querySelector('#title')
+// will work the same way like we used in styling.
+// this "#" means we are working for id and then the name of id will be written.
+
+>document.querySelector('.heading')
+// will display the class with className as heading.
+
+>document.querySelector('ul')
+// will display the complete unordered list 
+
+>const myUnorderedList = document.querySelector('ul')
+
+>myUnorderedList.querySelector('li')
+// gave the first list item as output
+
+>const firstListItem = myUnorderedList.querySelector('li')
+// firstListItem.style.color = ""
+
+>firstListItem.innerText = "five"
+
+>document.querySelectorAll('li')
+// we will get a nodeList(looks very similar to array because it has forEach loop) containing 3 list items.
+
+>const tempLiList = document.querySelectorAll('li')
+// we gave name to it , for easy manipulation.
+
+>tempLiList[0].style.color= 'green'
+// we can access the first element by writing the index , which shows that nodeList is little little similar to array.
+
+tempLiList.forEach(function(l){
+   l.style.color = 'green'
+   l.style.backgroundColor = 'lightBlue'
+})
+
+// for iterating over nodeList we can only use forEach loop and not map , because we can only apply the functionality of map on array and not on nodeList.
+
+// for applying the functionality of map on nodeList , we have to convert it into array first which is done as follows :-
+
+Array.from(tempLiList)
+// converts tempLiList into array
+
+const myArray = Array.from(tempLiList)
+
+myArray.forEach((item) => console.log(item))
+
+// Even if nodeList has only one element , we still , will access it using indexing.
+
+const myH1 = document.querySelectorAll('h1')
+// it will display myH1 as nodeList.
+
+myH1.style.color = 'green'
+// this will cause error becuase we didn't use indexing to display elements.
+
+myH1[0].style.color = 'green'
+// this is the correct way of writing , even if we have a single element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
