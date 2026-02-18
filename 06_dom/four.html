@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+</head>
+<body style="background-color : #212121 ; color : #fff">
+    <ul class="language">
+        <li style="background-color: cadetblue; color:mediumblue">javascript</li>
+    </ul>
+    <p class="paragraph" style="background-color: cadetblue; color:mediumblue">These are the languages which we have learnt till date </p>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerText = `${langName}`
+        li.style.backgroundColor = "cadetblue"
+        li.style.color = "mediumblue"
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python");
+    addLanguage("java");
+    addLanguage("html");
+    function addParagraph(newText){
+        const para = document.createElement('p');
+        para.innerText = `${newText}`
+        para.style.color = "mediumblue"
+        para.style.backgroundColor = "cadetBlue"
+        document.querySelector('.paragraph').appendChild(para)
+        // very important point to remember here is that , appenChild() works only on a single DOM element.
+        // when i wrote querySelectorAll instead of querySelector , it gave a NodeList , not a single element.
+    }
+    addParagraph("i love you pranjal")
+
+    function addOptimisedLang(langName){
+        const li= document.createElement('li');
+        // li.addText = `${langName}`
+        li.style.backgroundColor = "cadetBlue"
+        li.style.color = "mediumBlue"
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lanaguage').appendChild(li)
+    }
+    addOptimisedLang('golang')
+
+    // the above written code is way more optimised than the previous code for 'li' , becuase for appending , this time , we don't have to transverse through the whole system
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
