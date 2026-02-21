@@ -15,7 +15,7 @@ while(i <= myArray.length){
     i++
 }
 
-// do while
+// do while loop
 console.log(`MULTIPLICATION TABLE OF 4`)
 let num = 4
 let j = 1
