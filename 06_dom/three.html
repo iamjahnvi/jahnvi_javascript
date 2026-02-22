@@ -10,16 +10,16 @@
 </body>
 <script>
     const div = document.createElement('div')
-    console.log(div);
+    console.log(div)
     div.className = "main"
-    // one thing that u have to remember is that , we write className and not class , for assigning class to the element.
-    div.id = Math.round( Math.random()*10 + 1)
+    div.id = Math.round(Math.random()*10 + 1)
     div.setAttribute("title" , "generated title")
     div.style.backgroundColor = "blue"
     div.style.color = "white"
 
     // div.innerText = "chai aur code"
     // this method is generally not preferred because it overwrites the value of innerText , that's why we use this :-
+    
     const addText = document.createTextNode("Chai aur Code")
     div.appendChild(addText)
     document.body.appendChild(div)
