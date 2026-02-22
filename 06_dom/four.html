@@ -13,20 +13,51 @@
 </body>
 <script>
     function addLanguage(langName){
-        const li = document.createElement('li');
-        li.innerText = `${langName}`
+        const li = document.createElement('li')
+        // creation of new element , li.
+
+        const addText1 = document.createTextNode(`${langName}`)
+        li.appendChild(addText1)
+        // adding langName as text in the list item.
+
+        // OTHER WAY :-
+        // li.innerText = `${langName}`
+        // this is going to re-write the text.
+
         li.style.backgroundColor = "cadetblue"
         li.style.color = "mediumblue"
-        document.querySelector('.language').appendChild(li)
+        // adding attributes to the list item.
+
+        // the correct(best) way of printing :-
+        // document.querySelector('.language').appendChild(li)
+
+        // the second correct way of printing :-
+        document.body.querySelector('ul').appendChild(li);
+
+        // incorrect way of printing :-
+        // document.body.ul.appendChild(li)
+        // in the above case , ul is a child element , not a property , and hence because of which we cannot approach it via this method.
+
     }
     addLanguage("python");
     addLanguage("java");
     addLanguage("html");
+
     function addParagraph(newText){
         const para = document.createElement('p');
-        para.innerText = `${newText}`
+        // creation of a new element.
+
+        const addText2 = document.createTextNode(newText)
+        para.appendChild(addText2);
+        // way of appending text to the newly created para.
+
+        // second way of adding text to the element.
+        // para.innerText = `${newText}`
+
         para.style.color = "mediumblue"
         para.style.backgroundColor = "cadetBlue"
+        // adding attributes to it.
+
         document.querySelector('.paragraph').appendChild(para)
         // very important point to remember here is that , appenChild() works only on a single DOM element.
         // when i wrote querySelectorAll instead of querySelector , it gave a NodeList , not a single element.
@@ -34,25 +65,48 @@
     addParagraph("i love you pranjal")
 
     function addOptimisedLang(langName){
-        const li= document.createElement('li');
+        const li = document.createElement('li');
+        // creation of a new element.
+
         // li.addText = `${langName}`
+        // one way of adding text to the new element.
+
         li.style.backgroundColor = "cadetBlue"
         li.style.color = "mediumBlue"
+        // adding attributes to li.
+
         li.appendChild(document.createTextNode(langName))
-        document.querySelector('.lanaguage').appendChild(li)
+        // writing this way removes the hassle of creating a new variable.
+
+        document.querySelector('.language').appendChild(li)
     }
-    addOptimisedLang('golang')
-
-    // the above written code is way more optimised than the previous code for 'li' , becuase for appending , this time , we don't have to transverse through the whole system
-
+    addOptimisedLang("golang");
+    addOptimisedLang("typescript");
 
 
+    // the above written code is way more optimised than the previous code for 'li' , becuase for appending , this time , we don't have to transverse through the whole system. 
+    // CONCLUSION : avoid the use of innerHTML method because that makes us trasverse thru the whole system.
 
 
+    // EDIT :-
 
+    // Replacing element
+    const secondLang = document.querySelector("li : nth-child(2)")
+    // secondLang.innerHTML = "Mojo" (not an optimised approach)
 
+    const newLi = document.createElement('li')
+    newLi.textContent = "Ruby"
+    secondLang.replaceWith(newLi)
 
+    // edit
+    const firstLang = document.querySelector("li : first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
 
+    // remove
+    const lastLang = document.querySelector("li : last-child")
+    lastLang.remove();
+
+    // in this one , we removed the last element.
 
 
 </script>
