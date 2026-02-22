@@ -24,7 +24,9 @@
     // we got a HTML collection of divs inside parent class and we can iterate on it thru for loop.
 
     console.log(parent.children[0])
-    // we can access parent class as an array inside which elements cam be accesses thru indexing.
+    // we can access parent class as an array inside which elements can be accessed thru indexing.
+
+    // we wrote parent.children and not only parent because we can only apply this loop thing on an HTML collection , which is parent.children and not only parent.
 
     // for(let i = 0 ; i < parent.children.length ; i++){
     //     console.log(parent.children[i].innerContent)
@@ -46,7 +48,8 @@
 
     console.log(parent.firstElementChild);
     console.log(parent.lastElementChild);
-    // console.log(parent.secondElementChild)     // undefined
+    // console.log(parent.secondElementChild)   
+    // this is undefined.
 
     const dayOne = document.querySelector('.day')
     // from all the elements having class 'day' , querySelector will print the first day only.
@@ -56,8 +59,7 @@
     
     console.log("NODES : " , parent.childNodes)
 
-
-
+    // lec-33 after 15mins ,
 
 </script>
 </html>
