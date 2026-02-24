@@ -62,12 +62,26 @@ console.log(myArr.at(-2));
 // if inputed index is out of length of array , then it returns index as undefined.
 // for negative index output = value at (array.length + negative index)
 
+//-------------things learnt while reading docs------------
 
+const animal = ["lion", , "elephant"];
+console.log(animal);                  // [ 'lion', <1 empty item>, 'elephant' ]
 
+console.log(animal[1]);
+// returns undefined
 
+// transversing thru the above array using forEach loop
+animal.forEach(item => console.log(item)); 
+// output : lion elephant
 
-
-
+// transversing thru the above array using traditional loop
+for(let i = 0 ; i < animal.length ; i++){
+    console.log(animal[i])
+}
+// output : 
+// lion
+// undefined
+// elephant
 
 
 
