@@ -94,3 +94,23 @@ gameCounter = 100;
 ++gameCounter;
 console.log(gameCounter);  // 101
 
+// ------------stuff learnt while reading docs-----------
+
+// In a case when a value is reprsenting a number in memory as a string, there are following methods of conversion :-
+// parseInt() - returns whole numbers , so its use is diminished for decimals.
+
+console.log(parseInt("101" , 2))             // 5
+// converts the string - "101" according to radix value - 2 (binary)
+
+console.log(parseInt("101.23" , 10))          // 101
+// converts the string - "101" according to radix value - 10 (decimal)
+
+console.log(parseFloat("101.23" , 10))         // 101.23
+// converts the string - "101.23" into float.
+
+// very important point - a number literal like 37 in javascript code is a floating-point value , not an integer.
+ 
+// just for understanding
+console.log("1.1" + "1.1")                          // 1.11.1
+console.log((+"1.1") + (+"1.1"))                 //  2.2
+
