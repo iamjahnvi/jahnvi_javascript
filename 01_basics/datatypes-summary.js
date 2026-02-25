@@ -15,6 +15,8 @@ const bigNumber = 3456789345n
 
 // Javascript is a dynamically typed language.
 
+// symbol is a data type whose instances are unique and immutable.
+
 // Reference Type (Non-primitive)
 // Array , Objects , Functions
 
