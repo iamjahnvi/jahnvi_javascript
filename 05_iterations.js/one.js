@@ -1,6 +1,6 @@
 // for loop
 
-let array = [1 , 2 , 3 , 4 , 5]
+let array = [1 , 2 , 3 , 4 , 5 , 6 , 7]
 for(let a = 0 ; a < array.length ; a++){
     const element = array[a]
     if(element == 2){
