@@ -89,15 +89,15 @@
 // person is the name of the class.
 
 // Step 2: constructor(name)
-// The constructor is a special method , which runs automatically when we use "new" keyword.
-// Why is it needed?
+// The constructor is a special method , which runs automatically when we use the "new" keyword.
+// Why is it needed ?
 // It initializes (sets up) the object.
 
 // Step 3: this.name = name
 // this refers to the current object being created.
 // So when we do:
 // const p1 = new Person("Pranjal");
-// js Creates an empty object { }
+// js creates an empty object { }
 // Sets this to that object
 
 // Assigns:
@@ -112,15 +112,15 @@
 // It belongs to every object created from Person.
 
 // Inside greet:
-// console.log("Hello " + this.name);
+// console.log(" Hello " + this.name);
 // Again, this refers to the object calling it.
 // So if p1 calls greet:
 // this.name = "Pranjal"
 
-// Output:
+// Output :-
 // Hello Pranjal
 
-// Step 5: const p1 = new Person("Pranjal");
+// Step 5: const p1 = new Person("Pixie");
 // When you use new, JavaScript does 4 things automatically:
 
 // Creates empty object {}
@@ -152,10 +152,9 @@
 // HASHBAG COMMENT : works similarly as that of normal comments(//) but begins with (#!) , and is only valid at the absolute start of a script module. it is exclusively used to specify a javascript interpreter, which provide the path to a specific JavaScript interpreter that you want to use to execute the script. 
 // example : #!usr/bin/env/node
 
-
 // the prototype based model provides dynamic inheritance , which means in JS , inheritance can change at runtime. 
 
-// example :-
+// example:-
 // const person = {};
 
 // const student = Object.create(person);
@@ -166,7 +165,7 @@
 
 // student.sayHi(); Works!
 
-// even though student was created before sayHi was added , it still inherits it.
+// even though student was created before sayHi was added , it will still inheret it.
 
 
 
