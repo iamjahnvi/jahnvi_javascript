@@ -5,10 +5,9 @@
 // if(temp < 50){
 //     console.log("less than 50")
 // } else {
-//     console.log("not less than 50")
+//     console.log("above or equal to 50")
 // }
 // console.log("yeppie");
-
 
 // const score = 200
 
