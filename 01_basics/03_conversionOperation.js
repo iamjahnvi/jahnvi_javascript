@@ -51,7 +51,7 @@
 
 // **************OPERATIONS**************
 
-let value = 3
+let value = 4
 let negValue = -value
 // console.log(negValue)
 
