@@ -9,7 +9,7 @@
 // console.log(valueInNumber);         // not a number(NaN)
 
 // valueInNumber = Number(null);
-// console.log(typeof valueInNumber);   // number    
+// console.log(typeof valueInNumber);   // Number    
 // console.log(valueInNumber);          // 0
 
 // valueInNumber = Number(undefined) ;
@@ -27,7 +27,7 @@
 
 // isLoggedIn = ""
 // booleanisLoggedIn = Boolean(isLoggedIn);
-// console.log(typeof booleanisLoggedIn);    // boolean
+// console.log(typeof booleanisLoggedIn);    // Boolean
 // console.log(booleanisLoggedIn);          //  false
 
 // isLoggedIn = "jahnvi"
@@ -36,12 +36,12 @@
 // console.log(booleanisLoggedIn);         //  true
 
 
-// Conclusion
+// Conclusion :-
 /*
 1 = true 
 0 = false
 "" = false
-"jhanvi" = true
+"Jhanvi" = true
 */
 
 // let someNumber = 12
