@@ -1,5 +1,5 @@
 const science = ["phy" , "chem" , "maths"]
-const arts =  ["his" , "hindi" , "geo"]
+const arts =  ["his" , "hindi" , "chemistry"]
 
 console.log(science.concat(arts));
 // concatenates two arrays
