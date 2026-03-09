@@ -7,31 +7,31 @@
 </head>
 <body style="background-color : #212121 ; color : #fff">
     <div class = "parent">
-        <div class = "day">Monday</div>
-        <div class = "day">Tuesday</div>
-        <div class = "day">Wednesday</div>
-        <div class = "day">Thursay</div>
-        <div class = "day">Friday</div>
+        <div class = "day">monday</div>
+        <div class = "day">tuesday</div>
+        <div class = "day">wednesday</div>
+        <div class = "day">thursay</div>
+        <div class = "day">friday</div>
     </div>
 </body>
 <script>
     const parent = document.querySelector('.parent')
 
     console.log(parent);
-    // we got all the elements with parent class.
+    // we got all the elements within parent class.
 
     console.log(parent.children)
-    // we got a HTML collection of divs inside parent class and we can iterate on it thru for loop.
+    // we got a HTML collection of divs inside parent class and we can iterate on it through for loop.
 
     console.log(parent.children[0])
-    // we can access parent class as an array inside which elements can be accessed thru indexing.
+    // we can access parent class as an array inside which elements can be accessed through indexing.
 
     // we wrote parent.children and not only parent because we can only apply this loop thing on an HTML collection , which is parent.children and not only parent.
 
     // for(let i = 0 ; i < parent.children.length ; i++){
     //     console.log(parent.children[i].innerContent)
     // }
-    // it is showing - "undefined"
+    // it is showing - " undefined "
 
     for(let j = 0 ; j < parent.children.length ; j++){
         console.log(parent.children[j].innerHTML)
@@ -42,14 +42,14 @@
         if(k%2==0){
             parent.children[k].style.color = "blue"
         } else {
-            parent.children[k].style.color = "orange"
+            parent.children[k].style.color = "pink"
         }
     }
 
     console.log(parent.firstElementChild);
     console.log(parent.lastElementChild);
     // console.log(parent.secondElementChild)   
-    // this is undefined.
+    // this is undefined
 
     const dayOne = document.querySelector('.day')
     // from all the elements having class 'day' , querySelector will print the first day only.
