@@ -22,7 +22,7 @@ for(const names in array1){
 
 // for-of loop implemented on array :-
 console.log("Names i belong to :-")
-const array2 = ["pixie" , "champ" , "cutie" , "hustler"]
+const array2 = ["pixie" , "jaanu" , "cutie" , "hustler"]
 for(const names of array2){
     console.log(names)
 }
@@ -35,6 +35,7 @@ map.set('USA' , "United staes of america")
 map.set('UK'  ,   "United America")
 map.set('Fr' ,  "France")
 map.set('Fr' ,  "France")
+map.set('Br' ,  "Brazil")
 
 // console.log(map)
 for(const key in map){
