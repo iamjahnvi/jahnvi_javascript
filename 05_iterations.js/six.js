@@ -39,7 +39,7 @@ const list = numbers.filter((num) => {
 const alpha = [1 ,2 ,3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
 const beta = []
 alpha.forEach((num) => {
-    if(num > 4){
+    if(num > 5){
         beta.push(num)
     }
 })
@@ -109,14 +109,14 @@ books.forEach((bk) =>{
 
 
 // printing bkL using forEach loop.
-let bkL = []
+let bookL = []
 books.forEach((val) => {
     if( val.genre === 'history' && val.publish >=1985 && val.edition >= 2005 ){
-        bkL.push(val)
+        bookL.push(val)
     }
 })
 
-console.log(bkL);
+console.log(bookL);
 
 
 
